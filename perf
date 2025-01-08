@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo
+
+# Makes the cpu operate at max frequency.
+sudo cpupower frequency-set -d 3.6GHz -u 3.6Ghz
+
+# Makes the gpu operate at max frequency.
+echo 1100 | sudo tee /sys/class/drm/card1/gt_max_freq_mhz
+echo 1100 | sudo tee /sys/class/drm/card1/gt_min_freq_mhz
+
+echo
