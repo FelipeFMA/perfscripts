@@ -6,9 +6,9 @@ echo
 sudo cpupower frequency-set -d 1.7GHz -u 1.7Ghz
 
 # Makes the gpu use half of the maximum performance.
-echo 550 | sudo tee /sys/class/drm/card1/gt_max_freq_mhz
-echo 550 | sudo tee /sys/class/drm/card1/gt_min_freq_mhz
-echo 550 | sudo tee /sys/class/drm/card1/gt_max_freq_mhz
+echo 550 | sudo tee /sys/class/drm/card0/gt_max_freq_mhz
+echo 550 | sudo tee /sys/class/drm/card0/gt_min_freq_mhz
+echo 550 | sudo tee /sys/class/drm/card0/gt_max_freq_mhz
 echo
 echo "Don't worry if an \"Invalid argument\" error appear, it's normal!"
 

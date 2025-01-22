@@ -6,7 +6,7 @@ echo
 sudo cpupower frequency-set -d 400MHz -u 800Mhz
 
 # Make the gpu only operate at 300MHz
-echo 300 | sudo tee /sys/class/drm/card1/gt_min_freq_mhz
-echo 300 | sudo tee /sys/class/drm/card1/gt_max_freq_mhz
+echo 300 | sudo tee /sys/class/drm/card0/gt_min_freq_mhz
+echo 300 | sudo tee /sys/class/drm/card0/gt_max_freq_mhz
 
 echo
